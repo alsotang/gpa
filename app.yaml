@@ -1,0 +1,17 @@
+application: alsotang
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /gpa/static
+  static_dir: gpa/static
+  
+- url: /getJSONData
+  script: gpa/parseHTML.py
+  
+- url: /gpa
+  script: gpa/gpa.py
+
+- url: /.*
+  script: gpa/gpa.py

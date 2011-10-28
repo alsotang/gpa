@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>GPA自助查询</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="/gpa/static/gpa.js" type="text/javascript"></script>
+ </head>
+
+ <body>
+
+  <form id="query_form" onSubmit="getData(this)" method="post" > 
+   <td>学号：</td> 
+   <td><input name="stuid" type="text" size="15" id="stuid" autocomplete="off" value=""></td> 
+   <td>密码：</td> 
+   <td><input name="stuid" type="password" size="15" id="pwd" autocomplete="off" value=""></td> 
+   <input type="submit" name="Submit" value="确定">
+   <input type="reset" name="Submit2" value="清除" >
+  </form> 
+  
+  <div id="dataTable"></div>
+  
+
+ </body>
+</html>

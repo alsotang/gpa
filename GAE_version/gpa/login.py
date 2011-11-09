@@ -18,4 +18,4 @@ def login(stuid = None, pwd = None):  #用户名还是我自己的
     return data2.decode('gbk').encode('utf8') #要decode，否则为乱码
 
 if __name__ == '__main__':
-    pass
+    print login('1043111063', '20211121')
